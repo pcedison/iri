@@ -3,7 +3,7 @@ WORKDIR /iri
 COPY . /iri
 RUN mvn clean package
 
-FROM openjdk:11.0-jre-slim
+FROM openjdk:17-ea-3-oraclelinux8
 WORKDIR /iri
 COPY --from=builder /iri/target/iri-1.4.1.1.jar iri.jar
 COPY logback.xml /iri
