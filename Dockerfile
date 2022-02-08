@@ -3,7 +3,7 @@ WORKDIR /iri
 COPY . /iri
 RUN mvn clean package
 
-FROM openjdk:jre-slim
+FROM openjdk:11.0-jre-slim
 WORKDIR /iri
 COPY --from=builder /iri/target/iri-1.4.1.1.jar iri.jar
 COPY logback.xml /iri
