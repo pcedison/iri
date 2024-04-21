@@ -19,7 +19,7 @@
     <properties>
         <java-version>1.8</java-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <undertow.version>2.2.10.Final</undertow.version>
+        <undertow.version>2.3.13.Final</undertow.version>
     </properties>
 
     <repositories>
